@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Positioning</title>
+<style>
+ #Zack{
+  position: fixed;
+  bottom: 3;
+  right: 5;
+  width: 250px;
+  border: 3px solid #73AD21;
+ }
+ #H {
+  position: relative;
+  left: 300px;
+  Top: 25px;
+  width: 50px;
+  height: 50px;
+  border: 5px dotted #73AD21;
+}
+#Ford{
+  position: absolute;
+  bottom: 200px;
+  left: 450px;
+  width: 50px;
+   height: 50px;
+  border: 10px solid #73AD21;
+}
+ #A {
+  position: absolute;
+  left: 300px;
+  top: 500px;
+  width: 100px;
+  height: 200px;
+  border: 5px dotted red;
+   z-index: 10;
+  }
+  
+
+ #B {
+  position: absolute;
+  left: 350px;
+  top: 525px;
+  width: 100px;
+  height: 200px;
+  border: 5px dotted red;
+   z-index: 11;
+  }
+  
+ #C {
+  position: absolute;
+  left: 400px;
+  top: 550px;
+  width: 100px;
+  height: 200px;
+  border: 5px dotted red;
+   z-index: 12;
+  }
+  img{ cursor: alias;}
+</style>
+</head>
+<body>
+<img id="Zack" src="Piston.jpg" width="25" height="50">
+<img id="H" src="Cummins.jpg" width="50" height="50">
+<img id="Ford" src="Powerstroke.jpg" width="100" height="150">
+<img id="A" src="Piston.jpg" width="50" height="50">
+<img id="B" src="Cummins.jpg" width="50" height="50">
+<img id="C" src="Powerstroke.jpg" width="50" height="50">
+</body>
+</html>
