@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>css-navbar-horiz-about.html</title>
+<style>
+body {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: Blue;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color:blue;
+  color: black;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+</style>
+</head>
+<body>
+<ul>
+<li><a class="active" href="css-navbar-horiz-about.html">About</a></li>
+  <li><a href="css-navbar-horiz-news.html">News</a></li>
+  <li><a href="css-navbar-horiz-contacts.html">Contact</a></li>
+  <li style="float:right"><a href="css-navbar-horiz-home.html">Home</a></li>
+</ul>
+<h1> About</h1>
+</body>
+</html>
