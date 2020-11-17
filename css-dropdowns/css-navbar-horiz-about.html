@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>css-navbar-horiz-about.html</title>
+<style>
+body {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: Blue;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color:blue;
+  color: black;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<ul>
+<li><a class="active" href="css-navbar-horiz-about.html">About</a></li>
+  <li><a href="css-navbar-horiz-news.html">News</a></li>
+  <li><a href="css-navbar-horiz-contacts.html">Contact</a></li>
+  <li style="float:right"><a href="css-navbar-horiz-home.html">Home</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+</ul>
+<h1> About</h1>
+<p>Ceo of Flyway Decoys</p>
+<div class="dropdown">
+ <img src="Bob.jpg" alt="Joe" width="100" height="50">
+  <div class="dropdown-content">
+  <img src="Bob.jpg" alt="Bob" width="300" height="200">
+  <div class="desc">Bob Joe Smitt</div>
+    </div>
+  </div>
+<p>Vp of Flyway Decoys</p>
+<div class="dropdown">
+  <img src="ceo.jpeg" alt="Joe" width="100" height="50">
+  <div class="dropdown-content">
+  <img src="ceo.jpeg" alt="joe" width="300" height="200">
+  <div class="desc">Joe Bob Smoe</div>
+  </div>
+  </div>
+</body>
+</html>
