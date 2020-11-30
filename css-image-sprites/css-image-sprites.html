@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Image Sprites</title>
+<style>
+#navlist {
+  position: relative;
+}
+
+#navlist li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 0;
+}
+
+#navlist li, #navlist a {
+  height: 50px;
+  display: block;
+}
+
+#H {
+  left: 0px;
+  width: 50px;
+  background: url('Drawings.png') 0 0;
+}
+
+#K {
+  left: 60px;
+  width: 50px;
+  background: url('Drawings.png') -51px 0;
+}
+#HK {
+  left: 120px;
+  width: 50px;
+  background: url('Drawings.png') -102px 0;
+}
+#KU {
+  left: 180px;
+  width: 50px;
+  background: url('Drawings.png') -153px 0;
+}
+
+#H a:hover {
+  background: url('Drawings.png') 0 -51px;
+}
+#K a:hover {
+  background: url('Drawings.png') -51px -51px;
+}
+#HK a:hover {
+  background: url('Drawings.png') -102px -51px;
+}
+#KU a:hover {
+  background: url('Drawings.png') -153px -51px;
+}
+</style>
+</head>
+<body>
+<ul id="navlist">
+  <li id="H"><a href="https://www.carmax.com/cars/pickup-trucks"></a></li>
+  <li id="K"><a href="https://www.dictionary.com/browse/hi"></a></li>
+  <li id="HK"><a href="https://www.nimh.nih.gov/health/publications/seasonal-affective-disorder/index.shtml"></a></li>
+  <li id="KU"><a href="https://www.merriam-webster.com/dictionary/bye"></a></li>
+</ul>
+
+</body>
+</html>
