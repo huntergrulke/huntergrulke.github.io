@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Multiple Backgrounds</title>
+<style>
+#Hi { 
+  background-image: url('Glasses.jpg'), url('Face.jpg'), url('Brick.jpg');
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 240px 30px, top right, top right; 
+  background-size: 150px 150px, 240px 240px, auto; 
+padding: 15px;
+  height:400px;
+  width:400px;
+}
+#Bye{
+background: url('Glasses.jpg') 240px 30px/150px 150px no-repeat, url('Face.jpg') top right/240px 240px  no-repeat, url('Brick.jpg') top right/auto no-repeat;
+  height:400px;
+  width:400px;
+  padding: 15px;
+}
+html { 
+  background: url('Whitetail.jpg') no-repeat center fixed; 
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+<div id="Hi"></div>
+<div id="Bye">
+</div>
+</body>
+</html>
