@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Gradients</title>
+<style>
+.square {
+  height: 400px;
+  width: 400px;
+}
+#Hi {
+  background-color: red;
+  background-image: linear-gradient(red, yellow);
+}
+#K {
+  background-color: orange;
+  background-image: linear-gradient(to right, orange , green);
+}
+#HK {
+  background-color: red; 
+  background-image: linear-gradient(to bottom right, red, blue);
+}
+#KU{
+  background-image: linear-gradient(to right, rgba(255,0,0,0.3), rgba(26, 98, 158, 1), rgba(221, 133, 44, 0.3), rgba(188, 44, 221, 1), rgba(221, 44, 124, 0.3));
+}
+#KG {
+ background-image: repeating-linear-gradient(to right, red, green 25%);
+}
+#HG{
+    background-image: repeating-linear-gradient(to right, red, blue, red 25%); 
+}
+#Bye {
+  background-color: blue;
+  background-image: radial-gradient(Blue, pink, green, purple);
+}
+</style>
+</head>
+<body>
+<div class="square" id="Hi"></div>
+<div class="square" id="K"></div>
+<div class="square" id="HK"></div>
+<div class="square" id="KU"></div>
+<div class="square" id="KG"></div>
+<div class="square" id="HG"></div>
+<div class="square" id="Bye"></div>
+</body>
+</html>
